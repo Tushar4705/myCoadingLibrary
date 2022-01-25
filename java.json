@@ -1,0 +1,68 @@
+{
+	// Place your snippets for java here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+// 	"Print to console": {
+// 		"prefix": "log",
+// 		"body": [
+// 			"console.log('$1');",
+// 			"$2"
+// 		],
+// 		"description": "Log output to console"
+// 	}
+// }
+
+
+
+
+"-----": {
+	"prefix": "----",
+	"body": [
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+	],
+	"description": "-----"
+}
+/////////////////////Get started Code////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+"Start up code": {
+	"prefix": "main",
+	"body": [
+		"import java.util.Scanner;  // Import the Scanner class",
+		"",
+		"class $1 {",
+		"  public static void main(String[] args) {",
+		"		Scanner sc = new Scanner(System.in);  // Create a Scanner object",
+		"		$2",
+		"  }",
+		"}"
+	],
+	"description": ""
+}
+///////////////Find factorial of number//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+"Factorial of a Number": {
+	"prefix": "factorial",
+	"body": [
+		"  static int factorial(int n) {",
+		"      if(n == 1) {  // If input is 1 then factorial is 1",
+		"      return (1);",
+		"    }",
+		"    else { // Else recersively call factorial function",
+		"      return (n * factorial(n - 1));",
+		"    }",
+		"  }",
+	],
+	"description": "-----"
+}
+
+
+
+}
+
+
