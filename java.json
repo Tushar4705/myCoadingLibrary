@@ -30,22 +30,8 @@
 	],
 	"description": "-----"
 }
-/////////////////////Get started Code////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-"Start up code": {
-	"prefix": "main",
-	"body": [
-		"import java.util.Scanner;  // Import the Scanner class",
-		"",
-		"class $1 {",
-		"  public static void main(String[] args) {",
-		"		Scanner sc = new Scanner(System.in);  // Create a Scanner object",
-		"		$2",
-		"  }",
-		"}"
-	],
-	"description": ""
-}
-///////////////Find factorial of number//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//find factorial of a number>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 "Factorial of a Number": {
 	"prefix": "factorial",
 	"body": [
@@ -61,7 +47,7 @@
 	"description": "-----"
 }
  
-///////////////////////////competitive proramming template/////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+//competitive programming template>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
   
 "Template for CP":{
     "prefix" : "template",
@@ -123,13 +109,37 @@
 "		 $0",
 "",
 "    }",
-"}",
-"",
-"",
-"",		
+"}",		
     ]
-} 
-
+}
+//Trailing zero of factorial>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+"trailing zero in factorial of a number": {
+	"prefix": "trailing zero",
+	"body": [
+		"static int tzero(int n){",
+		"	int count = 0, i = 5;",
+		"	while(i <= n){",
+		"	  count = count + ( n / i);",
+		"	  i *= 5; ",
+		"	}",
+		"	return count;",
+		"  }",
+	],
+	"description": "-----"
+}
+"Highest Common Factor": {
+	"prefix": "hcf",
+	"body": [
+		"static int hcf(int a, int b){ //this function uses euclades algorithm ",
+		"	if(b==0){",
+		"	  return a;",
+		"	}",
+		"	else",
+		"	return(hcf(b, a % b));",
+		"  }",
+	],
+	"description": "-----"
+}
 
 
 }
